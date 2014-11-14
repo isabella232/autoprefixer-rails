@@ -8,7 +8,7 @@ begin
         Rake::AutoprefixerTasks.new( config(app)[0] )
       end
 
-      initializer :setup_autoprefixer, group: :all do |app|
+      initializer :setup_autoprefixer, :group => :all do |app|
         AutoprefixerRails.install(app.assets, *config(app))
       end
 

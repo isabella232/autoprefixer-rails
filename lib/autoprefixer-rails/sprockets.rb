@@ -12,7 +12,7 @@ module AutoprefixerRails
       input  = context.pathname.to_s
       output = input.chomp(File.extname(input)) + '.css'
 
-      @processor.process(css, opts.merge(from: input, to: output)).css
+      @processor.process(css, opts.merge(:from => input, :to => output)).css
     end
 
     # Register postprocessor in Sprockets depend on issues with other gems
