@@ -25,8 +25,8 @@ module AutoprefixerRails
   end
 end
 
-require_relative 'autoprefixer-rails/result'
-require_relative 'autoprefixer-rails/version'
-require_relative 'autoprefixer-rails/processor'
+require(File.expand_path('autoprefixer-rails/result', File.dirname(__FILE__)))
+require(File.expand_path('autoprefixer-rails/version', File.dirname(__FILE__)))
+require(File.expand_path('autoprefixer-rails/processor', File.dirname(__FILE__)))
 
-require_relative 'autoprefixer-rails/railtie' if defined?(Rails)
+require(File.expand_path('autoprefixer-rails/railtie', File.dirname(__FILE__)))
