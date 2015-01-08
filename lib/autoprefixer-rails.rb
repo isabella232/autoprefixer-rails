@@ -29,4 +29,4 @@ require(File.expand_path('autoprefixer-rails/result', File.dirname(__FILE__)))
 require(File.expand_path('autoprefixer-rails/version', File.dirname(__FILE__)))
 require(File.expand_path('autoprefixer-rails/processor', File.dirname(__FILE__)))
 
-require(File.expand_path('autoprefixer-rails/railtie', File.dirname(__FILE__)))
+require(File.expand_path('autoprefixer-rails/railtie', File.dirname(__FILE__))) if defined?(Rails)
