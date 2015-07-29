@@ -1,3 +1,107 @@
+## 5.2.1.1
+* Update Can I Use database.
+* Update internal libraries.
+
+## 5.2.1
+* Fix parent-less node issue on some cases (by Josh Gillies)
+
+## 5.2.0.1
+* Update Can I Use database.
+
+## 5.2 “Dont tread on me”
+* Add `appearance` support.
+* Warn users on old gradient direction or flexbox syntax.
+* Add `add: false` option to disable new prefixes adding.
+* Make Autoprefixer 30% faster.
+* Add prefixes for `pixelated` instead of `crisp-edges` in `image-rendering`.
+* Do not add `::placeholder` prefixes for `:placeholder-shown`.
+* Fix `text-decoration` prefixes.
+
+## 5.1.11
+* Update num2fraction to fix resolution media quuery (by 一丝).
+
+## 5.1.10
+* Do not generate `-webkit-image-rendering`.
+
+## 5.1.9
+* Fix DynJS compatibility (by Nick Howes).
+
+## 5.1.8.1
+* Update Can I Use database.
+
+## 5.1.8
+* Fix gradients in `mask` and `mask-image` properties.
+* Fix old webkit prefix on some unsupported gradients.
+
+## 5.1.7.1
+* Update Can I Use database and JS libraries.
+* Better support with Alaska runtime (by Jon Bardin).
+
+## 5.1.7
+* Fix placeholder selector (by Vincent De Oliveira).
+
+# 5.1.6
+* Use official `::placeholder-shown` selector (by Vincent De Oliveira).
+* Fix problem with rails-html-sanitizer (by Alexey Vasiliev).
+
+# 5.1.5
+* Add transition support for CSS Masks properties.
+
+# 5.1.4
+* Use `-webkit-` prefix for Opera Mobile 24.
+
+# 5.1.3.1
+* Fix Rails 5 support (by Joshua Peek).
+
+# 5.1.3
+* Add IE support for `image-rendering: crisp-edges`.
+
+# 5.1.2
+* Add never existed `@-ms-keyframes` to common mistake.
+
+## 5.1.1
+* Safer value split in `flex` hack.
+
+## 5.1 “Jianyuan”
+* Add support for resolution media query (by 一丝).
+* Higher accuracy while removing prefixes in values.
+* Add support for logical properties (by 一丝).
+* Add `@viewport` support.
+* Add `text-overflow` support (by 一丝).
+* Add `text-emphasis` support (by 一丝).
+* Add `image-rendering: crisp-edges` support.
+* Add `text-align-last` support.
+* Return `autoprefixer.defaults` as alias to current `browserslist.defaults`.
+* Save code style while adding prefixes to `@keyframes` and `@viewport`.
+* Do not remove `-webkit-background-clip` with non-spec `text` value.
+* Fix `-webkit-filter` in `transition`.
+* Better support for browser versions joined on Can I Use
+  like `ios_saf 7.0-7.1` (by Vincent De Oliveira).
+* Fix compatibility with `postcss-import` (by Jason Kuhrt).
+* Fix Flexbox prefixes for BlackBerry and UC Browser.
+* Fix gradient prefixes for old Chrome.
+
+## 5.0.0.3
+* Fix error on `nil` in processor params.
+
+## 5.0.0.2
+* Fix for non-Rails environments.
+* Add notice about unsupported ExecJS runtimes.
+* Update Can I Use data.
+
+## 5.0.0.1
+* Fix issue on node.js runtime.
+
+## 5.0 “Pravda vítězí”
+* Use PostCSS 4.0.
+* Use Browserslist to parse browsers queries.
+* Use global `browserslist` config.
+  Key `browsers` in `config/autoprefixer.yml` is now deprecated.
+* Add `> 5% in US` query to select browsers by usage in some country.
+* Add `object-fit` and `object-position` properties support.
+* Add CSS Shape properties support.
+* Fix UC Browser name in debug info.
+
 ## 4.0.2.2
 * Update Can I Use data.
 * Update some npm dependencies.
