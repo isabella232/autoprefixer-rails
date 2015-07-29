@@ -15,7 +15,7 @@ begin
           AutoprefixerRails.install(env, *config(env.root))
         end
       else
-        initializer :setup_autoprefixer, group: :all do |app|
+        initializer :setup_autoprefixer, :group => :all do |app|
           AutoprefixerRails.install(app.assets, *config(app.root))
         end
       end
