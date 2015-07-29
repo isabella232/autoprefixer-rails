@@ -37,10 +37,7 @@ module AutoprefixerRails
 
     # Parse Browserslist config
     def parse_config(config)
-      config.gsub(/#[^\n]*/, '')
-            .split(/\n/)
-            .map(&:strip)
-            .reject(&:empty?)
+      config.gsub(/#[^\n]*/, '').split(/\n/).map(&:strip).reject(&:empty?)
     end
 
     private
